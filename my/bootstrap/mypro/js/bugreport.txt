@@ -1,0 +1,486 @@
+uname -a
+Darwin liangtekiMacBook-Pro-2.local 12.4.0 Darwin Kernel Version 12.4.0: Wed May  1 17:57:12 PDT 2013; root:xnu-2050.24.15~1/RELEASE_X86_64 x86_64
+
+
+VIM - Vi IMproved 7.3 (2010 Aug 15, compiled Aug 22 2012 15:36:46)
+Compiled by root@apple.com
+Normal version without GUI.  Features included (+) or not (-):
+-arabic +autocmd -balloon_eval -browse +builtin_terms +byte_offset +cindent 
+-clientserver -clipboard +cmdline_compl +cmdline_hist +cmdline_info +comments 
+-conceal +cryptv +cscope +cursorbind +cursorshape +dialog_con +diff +digraphs 
+-dnd -ebcdic -emacs_tags +eval +ex_extra +extra_search -farsi +file_in_path 
++find_in_path +float +folding -footer +fork() -gettext -hangul_input +iconv 
++insert_expand +jumplist -keymap -langmap +libcall +linebreak +lispindent 
++listcmds +localmap -lua +menu +mksession +modify_fname +mouse -mouseshape 
+-mouse_dec -mouse_gpm -mouse_jsbterm -mouse_netterm -mouse_sysmouse 
++mouse_xterm +multi_byte +multi_lang -mzscheme +netbeans_intg -osfiletype 
++path_extra -perl +persistent_undo +postscript +printer -profile +python/dyn 
+-python3 +quickfix +reltime -rightleft +ruby/dyn +scrollbind +signs 
++smartindent -sniff +startuptime +statusline -sun_workshop +syntax +tag_binary 
++tag_old_static -tag_any_white -tcl +terminfo +termresponse +textobjects +title
+ -toolbar +user_commands +vertsplit +virtualedit +visual +visualextra +viminfo 
++vreplace +wildignore +wildmenu +windows +writebackup -X11 -xfontset -xim -xsmp
+ -xterm_clipboard -xterm_save 
+   system vimrc file: "$VIM/vimrc"
+     user vimrc file: "$HOME/.vimrc"
+      user exrc file: "$HOME/.exrc"
+  fall-back for $VIM: "/usr/share/vim"
+Compilation: gcc -c -I. -D_FORTIFY_SOURCE=0 -Iproto -DHAVE_CONFIG_H -arch i386 -arch x86_64 -g -Os -pipe
+Linking: gcc -arch i386 -arch x86_64 -o vim -lncurses
+--- Directories and Files ---
+$VIM = "/usr/share/vim"
+directory "/usr/share/vim" exists
+$VIMRUNTIME = "/usr/share/vim/vim73"
+directory "/usr/share/vim/vim73" exists
+"/usr/share/vim/vim73/doc/help.txt" is readable
+"/usr/share/vim/vim73/doc/tags" is readable
+"/usr/share/vim/vim73/menu.vim" is readable
+"/usr/share/vim/vim73/filetype.vim" is readable
+"/usr/share/vim/vim73/syntax/synload.vim" is readable
+--- Scripts sourced ---
+  1: /usr/share/vim/vimrc
+  2: /usr/share/vim/vim73/plugin/getscriptPlugin.vim
+  3: /usr/share/vim/vim73/plugin/gzip.vim
+  4: /usr/share/vim/vim73/plugin/matchparen.vim
+  5: /usr/share/vim/vim73/plugin/netrwPlugin.vim
+  6: /usr/share/vim/vim73/plugin/rrhelper.vim
+  7: /usr/share/vim/vim73/plugin/spellfile.vim
+  8: /usr/share/vim/vim73/plugin/tarPlugin.vim
+  9: /usr/share/vim/vim73/plugin/tohtml.vim
+ 10: /usr/share/vim/vim73/plugin/vimballPlugin.vim
+ 11: /usr/share/vim/vim73/plugin/zipPlugin.vim
+ 12: /usr/share/vim/vim73/bugreport.vim
+--- Options ---
+  ambiwidth=single    fileformat=unix     numberwidth=4       swapsync=fsync
+noautochdir           filetype=           omnifunc=           switchbuf=
+noautoindent          foldclose=          operatorfunc=       synmaxcol=3000
+  autoprint           foldcolumn=0      nopaste               syntax=
+noautoread            foldenable          pastetoggle=        tabline=
+noautowrite           foldexpr=0          patchexpr=          tabpagemax=10
+noautowriteall        foldignore=#        patchmode=          tabstop=8
+  background=light    foldlevel=0       nopreserveindent      tagbsearch
+  backspace=2         foldlevelstart=-1   previewheight=12    taglength=0
+nobackup              foldmethod=manual nopreviewwindow       tagrelative
+  backupcopy=auto     foldminlines=1      printdevice=        tags=./tags,tags
+  backupext=~         foldnestmax=20      printencoding=      tagstack
+  backupskip=/tmp/*   formatexpr=         printfont=courier   termencoding=
+nobeautify            formatoptions=tcq   printmbcharset=   noterse
+nobinary              formatprg=          printmbfont=        textauto
+nobomb                fsync               printoptions=     notextmode
+  bufhidden=        nogdefault            prompt              textwidth=0
+  buflisted           helpheight=20       pumheight=0         thesaurus=
+  buftype=            helplang=cn         quoteescape=\     notildeop
+  cdpath=,,         nohidden            noreadonly            timeout
+  cedit=^F            history=20          redrawtime=2000     timeoutlen=1000
+  charconvert=      nohlsearch          norelativenumber    notitle
+nocindent           noicon                remap               titlelen=85
+  cinoptions=         iconstring=         report=2            titlestring=
+  cmdheight=1       noignorecase        noruler             nottimeout
+  cmdwinheight=7      iminsert=0          rulerformat=        ttimeoutlen=-1
+  colorcolumn=        imsearch=0          scroll=11           ttybuiltin
+  columns=80          includeexpr=      noscrollbind          ttyfast
+nocompatible        noincsearch           scrolljump=1        ttymouse=xterm
+  completefunc=       indentexpr=         scrolloff=0         ttyscroll=999
+noconfirm           noinfercase         nosecure              undodir=.
+nocopyindent        noinsertmode          selectmode=       noundofile
+  cpoptions=aABceFs   isprint=@,161-255   shell=/bin/bash     undolevels=1000
+  cryptmethod=zip     joinspaces          shellcmdflag=-c     undoreload=10000
+  cscopepathcomp=0    key=                shellquote=         updatecount=200
+  cscopeprg=cscope    keymodel=           shelltemp           updatetime=4000
+  cscopequickfix=     keywordprg=man -s   shellxquote=        verbose=0
+nocscopetag           langmenu=         noshiftround          verbosefile=
+  cscopetagorder=0    laststatus=1        shiftwidth=8        virtualedit=
+nocscopeverbose     nolazyredraw        noshortname         novisualbell
+nocursorbind        nolinebreak           showbreak=          warn
+nocursorcolumn        lines=24          noshowcmd           noweirdinvert
+nocursorline        nolisp              noshowfulltag         whichwrap=b,s
+  debug=            nolist              noshowmatch           wildchar=<Tab>
+nodelcombine          listchars=eol:$     showmode            wildcharm=0
+  dictionary=         loadplugins         showtabline=1       wildignore=
+nodiff                magic               sidescroll=0      nowildmenu
+  diffexpr=           makeef=             sidescrolloff=0     wildmode=full
+  diffopt=filler      makeprg=make      nosmartcase           wildoptions=
+nodigraph             matchtime=5       nosmartindent         window=0
+  display=            maxcombine=2      nosmarttab            winheight=1
+  eadirection=both    maxfuncdepth=100    softtabstop=0     nowinfixheight
+noedcompatible        maxmapdepth=1000  nospell             nowinfixwidth
+  encoding=utf-8      menuitems=25        spellcapcheck=      winminheight=1
+  endofline         nomodeline            spellfile=          winminwidth=1
+  equalalways         modelines=0         spelllang=en        winwidth=20
+  equalprg=           modifiable          spellsuggest=best   wrap
+noerrorbells        nomodified          nosplitbelow          wrapmargin=0
+  esckeys           nomore              nosplitright          wrapscan
+  eventignore=        mouse=              startofline         write
+noexpandtab           mousemodel=extend   statusline=       nowriteany
+noexrc                mousetime=500       suffixesadd=        writebackup
+  fileencoding=     nonumber              swapfile            writedelay=0
+  backupdir=.,~/tmp,~/
+  breakat= ^I!@*-+;:,./?
+  casemap=internal,keepascii
+  cinkeys=0{,0},0),:,0#,!^F,o,O,e
+  cinwords=if,else,while,do,for,switch
+  comments=s1:/*,mb:*,ex:*/,://,b:#,:%,:XCOMM,n:>,fb:-
+  commentstring=/*%s*/
+  complete=.,w,b,u,t,i
+  completeopt=menu,preview
+  define=^\s*#\s*define
+  directory=.,~/tmp,/var/tmp,/tmp
+  errorfile=errors.err
+  errorformat=%*[^"]"%f"%*\D%l: %m,"%f"%*\D%l: %m,%-G%f:%l: (Each undeclared identifier is reported only once,%-G%f:%l: for each function it appears in.),%-GIn file included from %f:%l:%c,%-GIn file included from %f:%l,%-Gfrom %f:%l:%c,%-Gfrom %f:%l,%f:%l:%c:%m,%f(%l):%m,%f:%l:%m,"%f"\, line %l%*\D%c%*[^ ] %m,%D%*\a[%*\d]: Entering directory `%f',%X%*\a[%*\d]: Leaving directory `%f',%D%*\a: Entering directory `%f',%X%*\a: Leaving directory `%f',%DMaking %*\a in %f,%f|%l| %m
+  fileencodings=ucs-bom,utf-8,default,latin1
+  fileformats=unix,dos
+  fillchars=vert:|,fold:-
+  foldmarker={{{,}}}
+  foldopen=block,hor,mark,percent,quickfix,search,tag,undo
+  foldtext=foldtext()
+  formatlistpat=^\s*\d\+[\]:.)}\t ]\s*
+  grepformat=%f:%l:%m,%f:%l%m,%f  %l%m
+  grepprg=grep -n $* /dev/null
+  guicursor=n-v-c:block,o:hor50,i-ci:hor15,r-cr:hor30,sm:block
+  helpfile=/usr/share/vim/vim73/doc/help.txt
+  highlight=8:SpecialKey,@:NonText,d:Directory,e:ErrorMsg,i:IncSearch,l:Search,m:MoreMsg,M:ModeMsg,n:LineNr,r:Question,s:StatusLine,S:StatusLineNC,c:VertSplit,t:Title,v:Visual,V:VisualNOS,w:WarningMsg,W:WildMenu,f:Folded,F:FoldColumn,A:DiffAdd,C:DiffChange,D:DiffDelete,T:DiffText,>:SignColumn,-:Conceal,B:SpellBad,P:SpellCap,R:SpellRare,L:SpellLocal,+:Pmenu,=:PmenuSel,x:PmenuSbar,X:PmenuThumb,*:TabLine,#:TabLineSel,_:TabLineFill,!:CursorColumn,.:CursorLine,o:ColorColumn
+  include=^\s*#\s*include
+  indentkeys=0{,0},:,0#,!^F,o,O,e
+  isfname=@,48-57,/,.,-,_,+,,,#,$,%,~,=
+  isident=@,48-57,_,192-255
+  iskeyword=@,48-57,_,192-255
+  lispwords=defun,define,defmacro,set!,lambda,if,case,let,flet,let*,letrec,do,do*,define-syntax,let-syntax,letrec-syntax,destructuring-bind,defpackage,defparameter,defstruct,deftype,defvar,do-all-symbols,do-external-symbols,do-symbols,dolist,dotimes,ecase,etypecase,eval-when,labels,macrolet,multiple-value-bind,multiple-value-call,multiple-value-prog1,multiple-value-setq,prog1,progv,typecase,unless,unwind-protect,when,with-input-from-string,with-open-file,with-open-stream,with-output-to-string,with-package-iterator,define-condition,handler-bind,handler-case,restart-bind,restart-case,with-simple-restart,store-value,use-value,muffle-warning,abort,continue,with-slots,with-slots*,with-accessors,with-accessors*,defclass,defmethod,print-unreadable-object
+  matchpairs=(:),{:},[:]
+  maxmem=9007199254157042
+  maxmempattern=1000
+  maxmemtot=9007199254157042
+  mkspellmem=460000,2000,500
+  nrformats=octal,hex
+  paragraphs=IPLPPPQPP TPHPLIPpLpItpplpipbp
+  path=.,/usr/include,,
+  printexpr=system('lpr' . (&printdevice == '' ? '' : ' -P' . &printdevice) . ' ' . v:fname_in) . delete(v:fname_in) + v:shell_error
+  printheader=%<%f%h%m%=Page %N
+  runtimepath=~/.vim,/usr/share/vim/vimfiles,/usr/share/vim/vim73,/usr/share/vim/vimfiles/after,~/.vim/after
+  scrollopt=ver,jump
+  sections=SHNHH HUnhsh
+  selection=inclusive
+  sessionoptions=blank,buffers,curdir,folds,help,options,tabpages,winsize
+  shellpipe=2>&1| tee
+  shellredir=>%s 2>&1
+  shortmess=filnxtToO
+  suffixes=.bak,~,.o,.h,.info,.swp,.obj
+  term=xterm-256color
+  titleold=Thanks for flying Vim
+  ttytype=xterm-256color
+  viewdir=~/.vim/view
+  viewoptions=folds,options,cursor
+  viminfo='100,<50,s10,h
+--- Terminal codes ---
+  t_AL=^[[%p1%dL      t_DL=^[[%p1%dM      t_ms=y              t_ti=^[[?1049h
+  t_al=^[[L           t_dl=^[[M           t_nd=^[[C           t_ue=^[[m
+  t_bc=               t_fs=^G             t_op=^[[39;49m      t_us=^[[4m
+  t_cd=^[[J           t_IE=^G             t_RI=^[[%p1%dC      t_vi=^[[?25l
+  t_ce=^[[K           t_IS=^[]1;          t_RV=^[[>c          t_vs=^[[?12;25h
+  t_cl=^[[H^[[2J      t_ke=^[[?1l^[>      t_Sb=               t_SI=
+  t_Co=256            t_ks=^[[?1h^[=      t_Sf=               t_EI=
+  t_CS=               t_le=^H             t_se=^[[27m         t_xs=
+  t_CV=               t_mb=^[[5m          t_so=^[[7m          t_ZH=^[[7m
+  t_ut=y              t_md=^[[1m          t_sr=^[M            t_ZR=^[[m
+  t_da=               t_me=^[[m           t_ts=^[]2;
+  t_db=               t_mr=^[[7m          t_te=^[[?1049l
+  t_AB=^[[%?%p1%{8}%<%t4%p1%d%e%p1%{16}%<%t10%p1%{8}%-%d%e48;5;%p1%d%;m
+  t_AF=^[[%?%p1%{8}%<%t3%p1%d%e%p1%{16}%<%t9%p1%{8}%-%d%e38;5;%p1%d%;m
+  t_cm=^[[%i%p1%d;%p2%dH
+  t_cs=^[[%i%p1%d;%p2%dr
+  t_vb=^[[?5h$<100/>^[[?5l
+  t_ve=^[[?12l^[[?25h
+  t_WP=^[[3;%p1%d;%p2%dt
+  t_WS=^[[8;%p1%d;%p2%dt
+--- Terminal keys ---
+t_#2 <S-Home>    ^[[1;2H   t_k2 <F2>        ^[[12;*~  t_kr <Right>     ^[O*C
+t_#4 <S-Left>    ^[[1;2D   t_k3 <F3>        ^[[13;*~  t_ku <Up>        ^[O*A
+t_%1 <Help>      ^[[28;*~  t_k4 <F4>        ^[[14;*~       <Mouse>     ^[[M
+t_%i <S-Right>   ^[[1;2C   t_k5 <F5>        ^[[15;*~       <xF1>       ^[O*P
+t_&8 <Undo>      ^[[26;*~  t_k6 <F6>        ^[[17;*~       <xF2>       ^[O*Q
+t_*7 <S-End>     ^[[1;2F   t_k7 <F7>        ^[[18;*~       <xF3>       ^[O*R
+t_@7 <End>       ^[[1;*F   t_k8 <F8>        ^[[19;*~       <xF4>       ^[O*S
+t_F1 <F11>       ^[[23;*~  t_k9 <F9>        ^[[20;*~       <xEnd>      ^[O*F
+t_F2 <F12>       ^[[24;*~  t_k; <F10>       ^[[21;*~       <zEnd>      ^[[8;*~
+t_K1 <kHome>     ^[[1;*~   t_kB <S-Tab>     ^[[Z           <xHome>     ^[O*H
+t_K4 <kEnd>      ^[[4;*~   t_kD <Del>       ^[[3~          <zHome>     ^[[7;*~
+t_K6 <kPlus>     ^[O*k     t_kI <Insert>    ^[[2;*~        <xUp>       ^[[1;*A
+t_K7 <kMinus>    ^[O*m     t_kN <PageDown>  ^[[6;*~        <xDown>     ^[[1;*B
+t_K8 <kDivide>   ^[O*o     t_kP <PageUp>    ^[[5;*~        <xLeft>     ^[[1;*D
+t_K9 <kMultiply> ^[O*j     t_kb <BS>        ^?             <xRight>    ^[[1;*C
+t_KA <kEnter>    ^[O*M     t_kd <Down>      ^[O*B          <kDel>      ^[[3;*~
+t_KB <kPoint>    ^[O*n     t_kh <Home>      ^[[1;*H
+t_k1 <F1>        ^[[11;*~  t_kl <Left>      ^[O*D
+--- Auto-Commands ---
+FileExplorer  BufEnter
+    *         silent! call s:LocalBrowse(expand("<amatch>"))
+BufEnter
+    *.vba     setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'| setlocal ma ff=unix noma |endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.gz  setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'| setlocal ma ff=unix noma |endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.bz2 setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'| setlocal ma ff=unix noma |endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+    *.vba.zip setlocal bt=nofile fmr=[[[,]]] fdm=marker|if &ff != 'unix'| setlocal ma ff=unix noma |endif|call vimball#ShowMesg(0,"Source this file to extract it! (:so %)")
+gzip  BufRead
+    *.gz      call gzip#read("gzip -dn")
+    *.bz2     call gzip#read("bzip2 -d")
+    *.Z       call gzip#read("uncompress")
+    *.lzma    call gzip#read("lzma -d")
+    *.xz      call gzip#read("xz -d")
+gzip  BufReadPre
+    *.gz      setlocal bin
+    *.bz2     setlocal bin
+    *.Z       setlocal bin
+    *.lzma    setlocal bin
+    *.xz      setlocal bin
+Network  BufReadCmd
+    file://*  exe "silent doau BufReadPre ".fnameescape(netrw#RFC2396(expand("<amatch>")))|exe 'e '.fnameescape(substitute(netrw#RFC2396(expand("<amatch>")),'file://\(.*\)','\1',""))|exe "bwipe ".fnameescape(expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(netrw#RFC2396(expand("<amatch>")))
+    file://localhost/*
+              exe "silent doau BufReadPre ".fnameescape(netrw#RFC2396(expand("<amatch>")))|exe 'e '.fnameescape(substitute(netrw#RFC2396(expand("<amatch>")),'file://localhost/\(.*\)','\1',""))|exe "bwipe ".fnameescape(substitute(expand("<amatch>"),'file://\(\k\+@\)\=','',''))|exe "silent doau BufReadPost ".fnameescape(netrw#RFC2396(expand("<amatch>")))
+    ftp://*   exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    rcp://*   exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    scp://*   exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    http://*  exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    dav://*   exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    davs://*  exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    rsync://* exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+    sftp://*  exe "silent doau BufReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(2,expand("<amatch>"))|exe "silent doau BufReadPost ".fnameescape(expand("<amatch>"))
+tar  BufReadCmd
+    tarfile::*
+              call tar#Read(expand("<amatch>"), 1)
+    tarfile::*/*
+              call tar#Read(expand("<amatch>"), 1)
+    *.tar.gz  call tar#Browse(expand("<amatch>"))
+    *.tar     call tar#Browse(expand("<amatch>"))
+    *.lrp     call tar#Browse(expand("<amatch>"))
+    *.tar.bz2 call tar#Browse(expand("<amatch>"))
+    *.tar.Z   call tar#Browse(expand("<amatch>"))
+    *.tgz     call tar#Browse(expand("<amatch>"))
+    *.tar.lzma
+              call tar#Browse(expand("<amatch>"))
+    *.tar.xz  call tar#Browse(expand("<amatch>"))
+    *.txz     call tar#Browse(expand("<amatch>"))
+zip  BufReadCmd
+    zipfile:* call zip#Read(expand("<amatch>"), 1)
+    zipfile:*/*
+              call zip#Read(expand("<amatch>"), 1)
+    *.zip     call zip#Browse(expand("<amatch>"))
+    *.jar     call zip#Browse(expand("<amatch>"))
+    *.xpi     call zip#Browse(expand("<amatch>"))
+    *.war     call zip#Browse(expand("<amatch>"))
+    *.ear     call zip#Browse(expand("<amatch>"))
+gzip  BufWritePost
+    *.gz      call gzip#write("gzip")
+    *.bz2     call gzip#write("bzip2")
+    *.Z       call gzip#write("compress -f")
+    *.lzma    call gzip#write("lzma -z")
+    *.xz      call gzip#write("xz -z")
+BufWrite
+    /private/tmp/crontab.*
+              set nowritebackup
+    /private/etc/pw.*
+              set nowritebackup
+Network  BufWriteCmd
+    ftp://*   exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+    rcp://*   exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+    scp://*   exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+    dav://*   exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+    davs://*  exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+    rsync://* exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+    sftp://*  exe "silent doau BufWritePre ".fnameescape(expand("<amatch>"))|exe 'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau BufWritePost ".fnameescape(expand("<amatch>"))
+tar  BufWriteCmd
+    tarfile::*
+              call tar#Write(expand("<amatch>"))
+    tarfile::*/*
+              call tar#Write(expand("<amatch>"))
+zip  BufWriteCmd
+    zipfile:* call zip#Write(expand("<amatch>"))
+    zipfile:*/*
+              call zip#Write(expand("<amatch>"))
+gzip  FileAppendPost
+    *.gz      call gzip#write("gzip")
+    *.bz2     call gzip#write("bzip2")
+    *.Z       call gzip#write("compress -f")
+    *.lzma    call gzip#write("lzma -z")
+    *.xz      call gzip#write("xz -z")
+gzip  FileAppendPre
+    *.gz      call gzip#appre("gzip -dn")
+    *.bz2     call gzip#appre("bzip2 -d")
+    *.Z       call gzip#appre("uncompress")
+    *.lzma    call gzip#appre("lzma -d")
+    *.xz      call gzip#appre("xz -d")
+gzip  FileReadPost
+    *.gz      call gzip#read("gzip -dn")
+    *.bz2     call gzip#read("bzip2 -d")
+    *.Z       call gzip#read("uncompress")
+    *.lzma    call gzip#read("lzma -d")
+    *.xz      call gzip#read("xz -d")
+gzip  FileReadPre
+    *.gz      setlocal bin
+    *.bz2     setlocal bin
+    *.Z       setlocal bin
+    *.lzma    setlocal bin
+    *.xz      setlocal bin
+Network  FileReadCmd
+    ftp://*   exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    rcp://*   exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    scp://*   exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    http://*  exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    dav://*   exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    davs://*  exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    rsync://* exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+    sftp://*  exe "silent doau FileReadPre ".fnameescape(expand("<amatch>"))|call netrw#Nread(1,expand("<amatch>"))|exe "silent doau FileReadPost ".fnameescape(expand("<amatch>"))
+tar  FileReadCmd
+    tarfile::*
+              call tar#Read(expand("<amatch>"), 0)
+    tarfile::*/*
+              call tar#Read(expand("<amatch>"), 0)
+zip  FileReadCmd
+    zipfile:* call zip#Read(expand("<amatch>"), 0)
+    zipfile:*/*
+              call zip#Read(expand("<amatch>"), 0)
+gzip  FileWritePost
+    *.gz      call gzip#write("gzip")
+    *.bz2     call gzip#write("bzip2")
+    *.Z       call gzip#write("compress -f")
+    *.lzma    call gzip#write("lzma -z")
+    *.xz      call gzip#write("xz -z")
+Network  FileWriteCmd
+    ftp://*   exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+    rcp://*   exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+    scp://*   exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+    dav://*   exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+    davs://*  exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+    rsync://* exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+    sftp://*  exe "silent doau FileWritePre ".fnameescape(expand("<amatch>"))|exe "'[,']".'Nwrite '.fnameescape(expand("<amatch>"))|exe "silent doau FileWritePost ".fnameescape(expand("<amatch>"))
+tar  FileWriteCmd
+    tarfile::*
+              call tar#Write(expand("<amatch>"))
+    tarfile::*/*
+              call tar#Write(expand("<amatch>"))
+zip  FileWriteCmd
+    zipfile:* call zip#Write(expand("<amatch>"))
+    zipfile:*/*
+              call zip#Write(expand("<amatch>"))
+FileExplorer  VimEnter
+    *         silent! call s:VimEnter(expand("<amatch>"))
+matchparen  WinEnter
+    *         call s:Highlight_Matching_Pair()
+Network  SourceCmd
+    ftp://*   exe 'Nsource '.fnameescape(expand("<amatch>"))
+    rcp://*   exe 'Nsource '.fnameescape(expand("<amatch>"))
+    scp://*   exe 'Nsource '.fnameescape(expand("<amatch>"))
+    http://*  exe 'Nsource '.fnameescape(expand("<amatch>"))
+    dav://*   exe 'Nsource '.fnameescape(expand("<amatch>"))
+    davs://*  exe 'Nsource '.fnameescape(expand("<amatch>"))
+    rsync://* exe 'Nsource '.fnameescape(expand("<amatch>"))
+    sftp://*  exe 'Nsource '.fnameescape(expand("<amatch>"))
+SourceCmd
+    *.vba.gz  call vimball#Decompress(expand("<amatch>"))|call vimball#Vimball(1)
+    *.vba.bz2 call vimball#Decompress(expand("<amatch>"))|call vimball#Vimball(1)
+    *.vba.zip call vimball#Decompress(expand("<amatch>"))|call vimball#Vimball(1)
+SpellFileMissing
+    *         call spellfile#LoadFile(expand('<amatch>'))
+matchparen  CursorMoved
+    *         call s:Highlight_Matching_Pair()
+matchparen  CursorMovedI
+    *         call s:Highlight_Matching_Pair()
+--- Normal/Visual mode mappings ---
+   .push(        i );
+   :             function( elems, callback, arg ) {
+n  gx            <Plug>NetrwBrowseX
+n  <Plug>NetrwBrowseX * :call netrw#NetrwBrowseX(expand("<cWORD>"),0)<CR>
+--- Insert/Command-line mode mappings ---
+
+No mapping found
+--- Abbreviations ---
+
+No abbreviation found
+--- Highlighting ---
+SpecialKey     xxx term=bold ctermfg=4 guifg=Blue
+NonText        xxx term=bold ctermfg=12 gui=bold guifg=Blue
+Directory      xxx term=bold ctermfg=4 guifg=Blue
+ErrorMsg       xxx term=standout ctermfg=15 ctermbg=1 guifg=White guibg=Red
+IncSearch      xxx term=reverse cterm=reverse gui=reverse
+Search         xxx term=reverse ctermbg=11 guibg=Yellow
+MoreMsg        xxx term=bold ctermfg=2 gui=bold guifg=SeaGreen
+ModeMsg        xxx term=bold cterm=bold gui=bold
+LineNr         xxx term=underline ctermfg=130 guifg=Brown
+Question       xxx term=standout ctermfg=2 gui=bold guifg=SeaGreen
+StatusLine     xxx term=bold,reverse cterm=bold,reverse gui=bold,reverse
+StatusLineNC   xxx term=reverse cterm=reverse gui=reverse
+VertSplit      xxx term=reverse cterm=reverse gui=reverse
+Title          xxx term=bold ctermfg=5 gui=bold guifg=Magenta
+Visual         xxx term=reverse ctermbg=7 guibg=LightGrey
+VisualNOS      xxx cleared
+WarningMsg     xxx term=standout ctermfg=1 guifg=Red
+WildMenu       xxx term=standout ctermfg=0 ctermbg=11 guifg=Black guibg=Yellow
+Folded         xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue
+                   guibg=LightGrey
+FoldColumn     xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue
+                   guibg=Grey
+DiffAdd        xxx term=bold ctermbg=81 guibg=LightBlue
+DiffChange     xxx term=bold ctermbg=225 guibg=LightMagenta
+DiffDelete     xxx term=bold ctermfg=12 ctermbg=159 gui=bold guifg=Blue
+                   guibg=LightCyan
+DiffText       xxx term=reverse cterm=bold ctermbg=9 gui=bold guibg=Red
+SignColumn     xxx term=standout ctermfg=4 ctermbg=248 guifg=DarkBlue
+                   guibg=Grey
+Conceal        xxx cleared
+SpellBad       xxx term=reverse ctermbg=224 gui=undercurl guisp=Red
+SpellCap       xxx term=reverse ctermbg=81 gui=undercurl guisp=Blue
+SpellRare      xxx term=reverse ctermbg=225 gui=undercurl guisp=Magenta
+SpellLocal     xxx term=underline ctermbg=14 gui=undercurl guisp=DarkCyan
+Pmenu          xxx ctermbg=225 guibg=LightMagenta
+PmenuSel       xxx ctermbg=7 guibg=Grey
+PmenuSbar      xxx ctermbg=248 guibg=Grey
+PmenuThumb     xxx cterm=reverse gui=reverse
+TabLine        xxx term=underline cterm=underline ctermfg=0 ctermbg=7
+                   gui=underline guibg=LightGrey
+TabLineSel     xxx term=bold cterm=bold gui=bold
+TabLineFill    xxx term=reverse cterm=reverse gui=reverse
+CursorColumn   xxx term=reverse ctermbg=7 guibg=Grey90
+CursorLine     xxx term=underline cterm=underline guibg=Grey90
+ColorColumn    xxx term=reverse ctermbg=224 guibg=LightRed
+MatchParen     xxx term=reverse ctermbg=14 guibg=Cyan
+<              xxx cleared
+--- Variables ---
+loaded_spellfile_plugin #1
+loaded_vimballPlugin   v31
+loaded_tarPlugin       v26
+loaded_netrwPlugin     v140
+loaded_getscriptPlugin  v32
+loaded_2html_plugin    vim7.3_v6
+loaded_matchparen     #1
+loaded_zipPlugin       v23
+loaded_gzip           #1
+more_save             #1
+b:changedtick         #6
+v:version             #703
+v:beval_winnr         #0
+v:lnum                #0
+v:scrollstart          Unknown
+v:oldfiles            ['/Library/WebServer/Documents/node/nodetest/json/json_dev.js', '/Library/WebServer/Documents/node/nodetest/node.js', '/Library/WebServer/Documents/grunt/1/out/c.js', '/Library/WebServer/Documents/grunt/1/Gruntfile.js', '/Library/WebServer/Documents/grunt/1/package.json', '/private/etc/hosts', '/private/etc/apache2/extra/httpd-vhosts.conf', '~/httpd-vhosts.conf', '/private/etc/apache2/httpd.conf', '/private/etc/host', '/Library/WebServer/Documents/index.php']
+v:dying               #0
+v:termresponse         ^[[?1;2c
+v:lang                 zh_CN.UTF-8
+v:count               #0
+v:progname             vi
+v:cmdbang             #0
+v:foldlevel           #0
+v:ctype                zh_CN.UTF-8
+v:prevcount           #0
+v:register             "
+v:mouse_win           #0
+v:count1              #1
+v:foldstart           #0
+v:foldend             #0
+v:profiling           #0
+v:beval_col           #0
+v:errmsg               E749: empty buffer
+v:beval_lnum          #0
+v:mouse_lnum          #0
+v:beval_bufnr         #0
+v:shell_error         #0
+v:lc_time              zh_CN.UTF-8
+v:searchforward       #1
+v:mouse_col           #0
+v:statusmsg            No abbreviation found
+v:warningmsg           search hit BOTTOM, continuing at TOP

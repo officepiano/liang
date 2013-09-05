@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<datalist>
+	<item>
+		<name>xiaohong</name>
+		<age>12</age>
+	</item>
+	<item>
+		<name>xiaoming</name>
+		<age>22</age>
+	</item>
+</datalist>
