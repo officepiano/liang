@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title></title>
+<style type="text/css">
+div{margin:0;padding:0;border: 0}
+
+body{font-size: 1em;font-size: 16px}
+
+.em{width: 50em;background: #c00;}
+
+.e{width: 800px;background: #c00;margin-top: 50px;font-size: 16px}
+</style>
+</head>
+<body>
+<div class="em" id="em">
+用时间所有的鲜花和芬芳
+</div>
+<button id="embt">浏览器文字大小变化后，点击获取em的宽</button>
+<div class="e">
+用时间所有的鲜花和芬芳
+</div>
+
+
+<script type="text/javascript">
+	var embt = document.getElementById('embt');
+	var em = document.getElementById('em');
+
+	embt.onclick = function  (argument) {
+		alert(em.clientWidth)
+	}
+
+</script>
+
+</body>
+</html>
